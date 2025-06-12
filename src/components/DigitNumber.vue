@@ -69,8 +69,8 @@
       x="33.343"
       y="203.756"
     />
-    <circle :class="{ active: data === ':' }" cx="124.051" cy="113.047" r="22" />
-    <circle :class="{ active: data === ':' }" cx="124.051" cy="319.502" r="22" />
+    <circle :class="{ active: data === '：' }" cx="124.051" cy="113.047" r="22" />
+    <circle :class="{ active: data === '：' }" cx="124.051" cy="319.502" r="22" />
   </svg>
 </template>
 
@@ -80,7 +80,8 @@
 
 <style scoped lang="sass">
 svg
-  margin: 5px
+  margin: 10px
+  width: 150px
 rect, circle
   fill: transparent
   &.active
