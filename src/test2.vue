@@ -57,7 +57,6 @@
           >
         </label>
         <p v-if="error" style="color: red;">{{ error }}</p>
-        <img src="../assets/922794cdce1bc62d208771cf1ebbd1cc.gif" style="width: 300px;">
       </v-col>
     </v-row>
   </v-container>
@@ -67,15 +66,6 @@
   import { openDB } from 'idb'
   import { onMounted, ref } from 'vue'
   import { useSettingsStore } from '@/stores/settings'
-  import { VitePWA } from "vite-plugin-pwa";
-
-const pwaPlugin = VitePWA({
-  registerType: "autoUpdate",
-  workbox: {
-    maximumFileSizeToCacheInBytes: 5 * 1024 ** 2, // 5 MB or set to something else
-  }
-  // etc
-});
 
   const settings = useSettingsStore()
   const error = ref('')

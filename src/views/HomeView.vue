@@ -42,6 +42,7 @@
           @click="finish"
         />
         <!-- 目前有事項才可以按跳過 -->
+        <img src="../assets/006b0dbf96fa8e442b8f8089b7cc5193.gif">
       </v-col>
     </v-row>
   </v-container>
@@ -127,3 +128,9 @@
     return m + '：' + s
   })
 </script>
+
+<style scope>
+h1,h2{
+  color: rgb(252, 0, 252)
+}
+</style>

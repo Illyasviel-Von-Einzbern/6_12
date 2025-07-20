@@ -35,6 +35,22 @@ const router = createRouter({
         title: '設定',
       },
     },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/test.vue'),
+      meta: {
+        title: '測試',
+      },
+    },
+    {
+      path: '/test2',
+      name: 'test2',
+      component: () => import('@/test2.vue'),
+      meta: {
+        title: '測試2',
+      },
+    },
   ],
 })
 
